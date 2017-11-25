@@ -1,0 +1,185 @@
+/* **********************************************
+ 
+ *   FRONTSTACK.IO HACKATHON
+ 
+ *   =============
+ 
+ * IRE THANKS FOR EXISTING <3
+ 
+ ********************************************** */
+
+
+/*  Variables ****************************** */
+
+:root {
+    --theme-colour: #E36F55;
+    --theme-color-dark: #D78E52;
+    --theme-colour-light: #F2994A;
+    --secondary-colour: #C3C0C0;
+}
+
+
+/* Typography ****************************** */
+
+html {
+    font-size: 16px;
+}
+
+html, body {
+    color: rgb(26, 26, 26);
+    font-family: "Catamaran", Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+
+
+/* Layout ****************************** */
+
+header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    justify-content: space-around;
+/* background: rgba(26, 26, 26, 0.603); */
+align-content: space-around;
+/* height: 100%; */
+}
+
+header .logo {
+    flex-grow: 1;
+}
+
+.logo img {
+    margin: .8em 0em 0em 1em;
+    width: 105px;
+}
+
+header nav {
+    display: none;
+}
+
+header .button {
+    text-decoration: none;
+    padding:.5em 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    font-weight: 100;
+    font-size: .9em;
+    margin-top:1em;
+}
+
+.toggle {
+    margin-top:10px;
+    background: whitesmoke;
+    width: 28px;
+   height: 4px;
+   position: relative;
+   margin: 2em .8em;
+} 
+.toggle::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 28px;
+        background: whitesmoke;
+
+    height: 4px;
+    top:10px;
+}
+.toggle::before{
+    position: absolute;
+content: "";
+display: block;
+    width: 28px;
+    height: 4px;
+    top:-10px;
+    background: whitesmoke;
+
+}
+
+.hero {
+    
+    height: 100vh;
+    padding: 1rem 2.5em;
+    background: linear-gradient(180deg, #EB5757 0%, #D59152 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+margin-top: 100px;    
+font-size: 3em;
+font-weight: 900;
+line-height: 1;
+text-align: center;
+color: white;
+max-width: 550px;
+
+
+}
+
+.hero-content .search {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 20vh;
+margin-bottom: 5px;
+}
+.hero-content .search label {
+font-size: 1.5em;
+font-weight: 400;
+color: white;
+display: block;
+text-align: center;
+line-height: 1;
+}
+    .hero-content .search input {
+    outline: none;
+    height: 60px;
+width: 100%;
+    max-width: 350px;
+font-size: 1rem;
+color:#EB5757;
+font-weight: 600;
+    padding: 1em 3em;
+    margin-top: 10px;
+    border-radius: 60px;
+    border: 3px solid #F2994A;
+    }
+    
+   .search input::-webkit-input-placeholder {
+        text-align: center;
+    color: #C3C0C0;
+    font-size: 1rem;
+font-weight: 100;
+}
+
+.search input::-moz-input-placeholder {
+    text-align: center;
+    font-size: 1rem;
+    color: #C3C0C0;
+    font-weight: 100;
+}
+
+
+
+
+a:visited,
+a:hover,
+a:active,
+a:link {
+    color: white;
+}
