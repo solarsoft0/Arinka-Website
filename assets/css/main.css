@@ -111,6 +111,11 @@ header .button {
     flex-direction: row;
 }
 
+.hero__form-focus {
+        height: 150vh;
+
+}
+
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -172,10 +177,7 @@ header .button {
     font-weight: 100;
 }
 
-.hero-content .search input:focus + .hero {
-    height: 200vh;
-    background: white;
-}
+
 
 a:visited,
 a:hover,
