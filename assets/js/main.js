@@ -1,11 +1,22 @@
 
-let search = document.getElementById("search");
-let hero = document.getElementsByClassName("hero");
-search.addEventListener("focus", expandHero);
-search.addEventListener("focusout", expandHero);
+// // Variable Declearation
+
+// let search = document.getElementById("search");
+// let hero = document.getElementsByClassName("hero");
 
 
-function expandHero (e) {
-     hero[0].classList.toggle("hero__form-focus");
 
-}
+// // Event Listeners
+
+
+// search.addEventListener("focus", expandHero);
+// search.addEventListener("focusout", expandHero);
+
+
+// // Functions
+
+
+// function expandHero (e) {
+//      hero[0].classList.toggle("hero__form-focus");
+
+// }

@@ -102,6 +102,7 @@ header .button {
 }
 
 .hero {
+    min-height: 570px;
     height: 100vh;
     padding: 1rem 2.5em;
     background: linear-gradient(180deg, #EB5757 0%, #D59152 100%);
