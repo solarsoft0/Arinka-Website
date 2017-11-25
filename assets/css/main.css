@@ -172,7 +172,7 @@ header .button {
     font-weight: 100;
 }
 
-.hero-content .search input:active+.hero {
+.hero-content .search input:focus + .hero {
     height: 200vh;
     background: white;
 }
