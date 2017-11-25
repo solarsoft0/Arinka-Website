@@ -19,6 +19,7 @@
 }
 
 
+
 /* Typography ****************************** */
 
 html {
@@ -35,6 +36,8 @@ body {
     font-smoothing: antialiased;
 }
 
+
+
 /* Typograpy ****************************** */
 h2 {
     color: #C3C0C0;
@@ -48,6 +51,10 @@ h2 {
     }
 
 /* Layout ****************************** */
+img {
+    width: 100%;
+    height: auto;
+}
 
 header {
     position: absolute;
@@ -202,3 +209,7 @@ a:active,
 a:link {
     color: white;
 }
+
+
+
+@media (min-width: 600px) {}
