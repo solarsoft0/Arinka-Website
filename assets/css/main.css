@@ -35,6 +35,17 @@ body {
     font-smoothing: antialiased;
 }
 
+/* Typograpy ****************************** */
+h2 {
+    color: #C3C0C0;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 2em 0;
+    }
+
+    p {
+        font-weight: 600;
+    }
 
 /* Layout ****************************** */
 
@@ -178,6 +189,11 @@ header .button {
     font-weight: 100;
 }
 
+
+
+section {
+    padding: 1.5em;
+}
 
 
 a:visited,
