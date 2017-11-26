@@ -51,10 +51,10 @@ h2 {
     }
 
 /* Layout ****************************** */
-/* img {
+img {
     width: 100%;
     height: auto;
-} */
+}
 
 header {
     position: absolute;
@@ -210,6 +210,9 @@ a:link {
     color: white;
 }
 
-
+.locations {
+    display: flex;
+    justify-content: space-around;
+}
 
 @media (min-width: 600px) {}
