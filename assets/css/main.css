@@ -196,6 +196,7 @@ header .button {
     font-weight: 100;
 }
 
+
 section {
     padding: 1.5em;
 }
@@ -207,21 +208,38 @@ a:link {
     color: white;
 }
 
+
 .locations {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
+
+.locations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .locations figure {
+    border-radius: 5px;
     position: relative;
     overflow: hidden;
     background: #3085a3;
     text-align: center;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
+/* reset figure margin */
+.locations figure:last-child{
+    margin-bottom: 0;
+}
+
+
 .locations figure picture {
+    
     position: relative;
     display: block;
     width: -webkit-calc(100% + 50px);
@@ -232,6 +250,11 @@ a:link {
     -webkit-transform: translate3d(-40px, 0, 0);
     transform: translate3d(-40px, 0, 0);
 }
+
+    .locations figure img {
+    display: block;
+    height: 100%;
+    }
 
 .locations figure picture::before {
     content: "";
@@ -258,7 +281,7 @@ a:link {
 
 .locations figure figcaption>div {
     position: absolute;
-    margin-top: 80%;
+    margin-top: 90%;
     text-align: left;
 }
 
@@ -307,4 +330,20 @@ a:link {
     transition-duration: 0.35s;
 }
 
+.button {
+    color: #E36F55;
+    text-decoration: none;
+    padding: .5em 1.5em;
+    border-radius: 25px;
+    border: 2px solid #E36F55;
+    font-weight: 100;
+    font-size: .9em;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.button.button-line {
+    width: 200px;
+    font-weight: 600;
+}
 @media (min-width: 600px) {}
