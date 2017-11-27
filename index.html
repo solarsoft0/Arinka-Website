@@ -8,8 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#E36E55" />
     <!-- <link rel="stylesheet" href="assets/css/reset.css" async> -->
+<link rel="icon" href="favicon.ico">
     <link rel="manifest" href="manifest.json">
 
+<!-- loading asyn using media attribute trick but without applying after using js to load css to reduce render blocking stylesheet, check https://bitsofco.de/understanding-the-critical-rendering-path/ for more info-->
 <link rel="stylesheet" href="assets/css/main.min.css" media="none" onload="if(media!='all')media='all'">
 <link href="https://fonts.googleapis.com/css?family=Catamaran:600,900" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
 

@@ -5,8 +5,7 @@
   "background_color": "#e46f55",
   "display": "fullscreen",
   "orientation": "portrait",
-  "Scope": "/",
-  "start_url": "/",
+ 
   "icons": [
     {
       "src": "./assets/images/icons/icon-72x72.png",
