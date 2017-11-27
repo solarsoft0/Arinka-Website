@@ -12,11 +12,11 @@
     <link rel="manifest" href="manifest.json">
 
 <!-- loading asyn using media attribute trick but without applying after using js to load css to reduce render blocking stylesheet, check https://bitsofco.de/understanding-the-critical-rendering-path/ for more info-->
-<link rel="stylesheet" href="assets/css/main.min.css" media="none" onload="if(media!='all')media='all'">
+<link rel="stylesheet" href="assets/css/main.css" media="none" onload="if(media!='all')media='all'">
 <link href="https://fonts.googleapis.com/css?family=Catamaran:600,900" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
 
 <noscript>
-<link rel="stylesheet" href="assets/css/main.min.css">
+<link rel="stylesheet" href="assets/css/main.css">
 <link href="https://fonts.googleapis.com/css?family=Catamaran:100,600,900" rel="stylesheet" async>
 </noscript>
  
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-<!-- <link rel="stylesheet" href="assets/css/main.min.css" async>
+<!-- <link rel="stylesheet" href="assets/css/main.css" async>
 <link href="https://fonts.googleapis.com/css?family=Catamaran:600,900" rel="stylesheet" async> -->
     <!-- HEADER START -->
     <header>
@@ -125,26 +125,30 @@
 
 
     <!-- BLOG SECTION -->
-    <section class="section blog">
-        <p class="title"> ON THE BLOG</p>
-        <article>
-            <h1>Hanging out in Borno</h1>
-            <figure>
+    <section class="blog">
+        
+         <article>
+             
+         
                 <picture>
-                    <img data-src="http://res.cloudinary.com/okanlawonema/image/upload/s--TIHVDp_4--/c_fill,g_custom:face,h_660,w_411/v1511619051/charlie-costello-301722_f901pd.jpg"
-                        alt="Abuja Picture">
+<img data-src="http://res.cloudinary.com/okanlawonema/image/upload/s--5kUxmXfn--/c_fill,g_auto,h_640,w_380/v1511619180/charlie-costello-301722_wqdd31.jpg"
+                        alt="Hanging out in Borno">
                 </picture>
-            </figure>
-        </article>
+<div class="post">
+    <p class="title"> ON THE BLOG</p>
+
+    <h1>Hanging out in Borno</h1>
+</div>
+         </article>
+
+       
     </section>
     <!-- BLOG SECTION END-->
 
     <!-- FOOTER SECTION -->
     <footer>
-        <div class="footer-content">
             <p>Terms and Conditions</p>
             <p>Copyright Frontstack, 2017</p>
-        </div>
     </footer>
     <!-- FOOTER SECTION END    -->
     <script src="assets/js/main.js"></script>

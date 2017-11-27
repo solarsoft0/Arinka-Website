@@ -433,3 +433,85 @@ a:visited {
     width: 200px;
     font-weight: 600
 }
+
+section.blog article {
+    position: relative;
+    overflow: hidden;
+overflow: hidden;
+/* Rectangle */
+
+
+
+background: #C4C4C4;
+
+}
+
+section.blog div {
+    position: absolute;
+width: 90%;
+height: auto;
+top:0;
+    padding: 1.5em;
+
+}
+
+     section.blog article p {
+        font-size: .9em;
+        letter-spacing: 2px;
+        color: #FEBE61;
+        margin: 30px 0;
+            transition: all .38s ease-in-out;
+
+    }
+
+    section.blog article h1 {
+        font-size: 2.8em;
+        font-weight: 600;
+        line-height: 1;
+        color: #fff;
+    }
+
+    section.blog picture::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 200%;
+        height: 329.5px;
+        background: #EB5757;
+        transform: rotate(-25deg) translateY(-150px) translateX(-200px);
+        -webkit-transform: rotate(-25deg) translateY(-150px) translateX(-200px);
+        -moz-transform: rotate(-25deg) translateY(-150px) translateX(-200px);
+        -ms-transform: rotate(-25deg) translateY(-150px) translateX(-200px);
+                    transition: all .1s ease-in-out;
+
+} 
+
+    section.blog:hover article p, section.blog:hover article p {
+            margin: 20px 0;
+    }
+
+    section.blog:hover article h1, section.blog:focus article h1 {
+        font-size: 2em;
+       
+    }
+
+    section.blog:hover picture::before, section.blog:focus picture::before {
+       
+        transform: rotate(0deg) translateY(-150px) translateX(-200px);
+       
+    }
+
+    footer {
+
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+    
+}
+footer p:last-child {
+    font-weight: 600;
+    margin-bottom: 15px;
+
+}
+
