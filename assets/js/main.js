@@ -25,6 +25,7 @@ let observer;
 
 // }
 
+window.onload = function () {
 
 if ('IntersectionObserver' in window) {
   observer = new IntersectionObserver(onChange, config);
@@ -35,7 +36,9 @@ if ('IntersectionObserver' in window) {
 }
 
 const loadImage = image => {
-  image.classList.add('fade-in');
+  image
+    .classList
+    .add('fade-in');
   image.src = image.dataset.src;
 }
 
@@ -46,6 +49,9 @@ function onChange(changes, observer) {
       loadImage(change.target);
       observer.unobserve(change.target);
     }
-    
+
   });
+}
+
+
 }
