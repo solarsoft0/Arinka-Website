@@ -21,8 +21,10 @@ html {
 }
 
 h2 {
-    color: #C3C0C0;
-    font-weight: 800;
+
+    color: #7C7373;
+    /* color: #524C4C; */
+    font-weight: 900;
     letter-spacing: 3px;
     margin: 2em 0
 }
