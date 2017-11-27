@@ -36,9 +36,7 @@ if ('IntersectionObserver' in window) {
 }
 
 const loadImage = image => {
-  image
-    .classList
-    .add('fade-in');
+  
   image.src = image.dataset.src;
 }
 
