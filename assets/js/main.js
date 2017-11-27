@@ -11,10 +11,7 @@ let observer;
 // let search = document.getElementById("search");
 // let hero = document.getElementsByClassName("hero");
 
-
-
 // // Event Listeners
-
 
 // search.addEventListener("focus", expandHero);
 // search.addEventListener("focusout", expandHero);
@@ -27,9 +24,6 @@ let observer;
 //      hero[0].classList.toggle("hero__form-focus");
 
 // }
-
-
-
 
 
 if ('IntersectionObserver' in window) {

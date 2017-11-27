@@ -21,9 +21,7 @@ html {
 }
 
 h2 {
-
     color: #7C7373;
-    /* color: #524C4C; */
     font-weight: 900;
     letter-spacing: 3px;
     margin: 2em 0
@@ -158,15 +156,15 @@ header .button {
 
 .search input::-webkit-input-placeholder {
     text-align: center;
-    color: #CB3B1F;
-     font-size: 1rem;
+    color: rgb(192, 192, 192);
+    font-size: 1rem;
     font-weight: 100
 }
 
 .search input::-moz-input-placeholder {
     text-align: center;
     font-size: 1rem;
-    color: #CB3B1F;
+    color: rgb(192, 192, 192);
     font-weight: 100
 }
 
