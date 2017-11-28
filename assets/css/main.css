@@ -175,7 +175,13 @@ header .logo {
 }
 
 header nav {
-    display: none
+    position: absolute;
+    right:0;
+    width: 0%;
+opacity: 0;
+    display: none;
+    transition: display 4s ease-in-out;
+
 }
 
 header .button {
@@ -193,7 +199,9 @@ header .button {
     width: 28px;
     height: 4px;
     position: relative;
-    margin: 2em .8em
+    margin: 2em .8em;
+    transition: all .3s ease-in-out;
+
 }
 
 .toggle::after,
@@ -213,6 +221,39 @@ header .button {
 .toggle::before {
     top: -10px
 }
+
+
+nav.active {
+    display: block;
+    position: absolute;
+    right:0;
+    width: 60%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 7em 1em 0em; 
+    text-align: right;
+    font-size: 1.5rem;
+    overflow: hidden;
+line-height: 2;    
+opacity: 1;
+}
+
+
+nav.active ~ .toggle {
+    background: rgb(255, 255, 255);
+    transform: rotate(45deg);
+}
+nav.active~.toggle::before {
+    background: rgb(247, 247, 247);
+    transform: rotate(85deg) translateX(10px);
+    opacity: 0;
+}
+nav.active~.toggle::after {
+    background: rgb(255, 255, 255);
+    transform: rotate(  85deg) translateX(-10px);
+}
+
+
 
 .hero {
     min-height: 570px;
@@ -297,6 +338,7 @@ a:active,
 a:hover,
 a:link,
 a:visited {
+    text-decoration: none;
     color: #fff
 }
 
@@ -438,11 +480,9 @@ section.blog article {
     position: relative;
     overflow: hidden;
 overflow: hidden;
-/* Rectangle */
+cursor: pointer;
 
 
-
-background: #C4C4C4;
 
 }
 
@@ -476,7 +516,7 @@ top:0;
         position: absolute;
         display: block;
         width: 200%;
-        height: 329.5px;
+        height: 529.5px;
         background: #EB5757;
         transform: rotate(-25deg) translateY(-150px) translateX(-200px);
         -webkit-transform: rotate(-25deg) translateY(-150px) translateX(-200px);
@@ -514,4 +554,37 @@ footer p:last-child {
     margin-bottom: 15px;
 
 }
+section.blog {
+    padding:0;
+}
+@media (min-width: 600px) {
 
+    section {
+        padding: 5vw 10vw;
+    }
+
+    section.about-us {
+
+        text-align: center;
+
+    }
+
+    section.about-us h2 {
+
+    }
+
+.locations {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+    .locations figure { 
+
+        margin-right: 20px;
+    }
+
+    .locations figure:last-child {
+margin-right: 0;
+    }
+
+}
