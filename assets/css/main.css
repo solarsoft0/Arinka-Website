@@ -162,7 +162,10 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
-    align-content: space-around
+    align-content: space-around;
+    background: #EB5757;
+    position: fixed;
+    z-index: 10000;
 }
 
 header .logo {
@@ -201,6 +204,10 @@ header .button {
     position: relative;
     margin: 2em .8em;
     transition: all .3s ease-in-out;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin-top: 2.4em;
 
 }
 
@@ -417,7 +424,8 @@ a:visited {
 .locations figure h3,
 .locations figure p {
     -webkit-transform: translate3d(0, 40px, 0);
-    transform: translate3d(0, 40px, 0)
+    transform: translate3d(0, 40px, 0);
+    line-height: 1;
 }
 
 .locations figure h3 {
@@ -518,10 +526,10 @@ top:0;
         width: 200%;
         height: 529.5px;
         background: #EB5757;
-        transform: rotate(-25deg) translateY(-150px) translateX(-200px);
-        -webkit-transform: rotate(-25deg) translateY(-150px) translateX(-200px);
-        -moz-transform: rotate(-25deg) translateY(-150px) translateX(-200px);
-        -ms-transform: rotate(-25deg) translateY(-150px) translateX(-200px);
+        transform: rotate(-25deg) translateY(-300px) translateX(-100px);
+        -webkit-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
+        -moz-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
+        -ms-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
                     transition: all .1s ease-in-out;
 
 } 
@@ -537,7 +545,7 @@ top:0;
 
     section.blog:hover picture::before, section.blog:focus picture::before {
        
-        transform: rotate(0deg) translateY(-150px) translateX(-200px);
+        transform: rotate(0deg) translateY(-300px) translateX(-100px);
        
     }
 
