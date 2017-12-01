@@ -11,21 +11,20 @@ let toggle = document.getElementById("toggle");
 let nav = document.getElementById("nav");
 let navLinks = nav.children[0].children;
 
-// let search = document.getElementById("search");
-// let hero = document.getElementsByClassName("hero");
+
+
 
 // // Event Listeners
 
-// search.addEventListener("focus", expandHero);
-// search.addEventListener("focusout", expandHero);
 toggle.addEventListener("click", toggleNav);
 Array.prototype.forEach.call(navLinks, function (nav, index) {
-console.log(nav.children[0])
 nav.children[0].addEventListener("click", gotoSection)
+});
 
 
-})
 // // Functions
+
+
 
 function gotoSection (e) {
   e.preventDefault();
@@ -100,3 +99,18 @@ function smoothScroll (target) {
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
+
+
+  
+// window.onscroll = function changeNav(){
+//   var navBar = document.getElementById('nav'),
+//         secondSection = document.getElementById('about-us'),
+//         secondSectionTop = aboutSection.getBoundingClientRect().top, 
+//         navBarHeight = navBar.getBoundingClientRect().height;
+
+//   if(secondSectionTop <= navBarHeight) {
+//         navBar.className = ('basic-classname');
+//   } else if(aboutSectionTop >= navBarHeight) {
+//        navBar.className =  ('basic-classname added-classname');
+//   }
+// }

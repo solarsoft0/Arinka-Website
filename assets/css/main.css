@@ -179,12 +179,11 @@ header .logo {
 
 header nav {
     position: absolute;
-    right:0;
+    right: 0;
     width: 0%;
-opacity: 0;
+    opacity: 0;
     display: none;
     transition: display 4s ease-in-out;
-
 }
 
 header .button {
@@ -208,7 +207,6 @@ header .button {
     outline: none;
     padding: 0;
     margin-top: 2.4em;
-
 }
 
 .toggle::after,
@@ -229,38 +227,36 @@ header .button {
     top: -10px
 }
 
-
 nav.active {
     display: block;
     position: absolute;
-    right:0;
+    right: 0;
     width: 60%;
     height: 100vh;
     background: rgba(0, 0, 0, 0.9);
-    padding: 7em 1em 0em; 
+    padding: 7em 1em 0em;
     text-align: right;
     font-size: 1.5rem;
     overflow: hidden;
-line-height: 2;    
-opacity: 1;
+    line-height: 2;
+    opacity: 1;
 }
 
-
-nav.active ~ .toggle {
+nav.active~.toggle {
     background: rgb(255, 255, 255);
     transform: rotate(45deg);
 }
+
 nav.active~.toggle::before {
     background: rgb(247, 247, 247);
     transform: rotate(85deg) translateX(10px);
     opacity: 0;
 }
+
 nav.active~.toggle::after {
     background: rgb(255, 255, 255);
-    transform: rotate(  85deg) translateX(-10px);
+    transform: rotate( 85deg) translateX(-10px);
 }
-
-
 
 .hero {
     min-height: 570px;
@@ -317,7 +313,7 @@ nav.active~.toggle::after {
     font-size: 1rem;
     color: #CB3B1F;
     font-weight: 600;
-    padding: 1em 3em;
+    padding: 1em 1em;
     margin-top: 10px;
     border-radius: 60px;
     border: 3px solid #F2994A
@@ -365,7 +361,7 @@ a:visited {
     border-radius: 5px;
     position: relative;
     overflow: hidden;
-    background: #3085a3;
+    background: #ffffff00;
     text-align: center;
     cursor: pointer;
     margin-bottom: 20px
@@ -472,127 +468,233 @@ a:visited {
     text-decoration: none;
     padding: .5em 1.5em;
     border-radius: 25px;
-    border: 2px solid #E36F55;
+    
     font-weight: 100;
     font-size: .9em;
-    margin-top: 1em;
     text-align: center
 }
 
 .button.button-line {
+    border: 2px solid #E36F55;
     width: 200px;
+    margin-top: 1em;
+        
     font-weight: 600
 }
 
 section.blog article {
     position: relative;
     overflow: hidden;
-overflow: hidden;
-cursor: pointer;
-
-
-
+    overflow: hidden;
+    cursor: pointer;
 }
 
 section.blog div {
     position: absolute;
-width: 90%;
-height: auto;
-top:0;
+    width: 90%;
+    height: auto;
+    top: 0;
     padding: 1.5em;
-
 }
 
-     section.blog article p {
-        font-size: .9em;
-        letter-spacing: 2px;
-        color: #FEBE61;
-        margin: 30px 0;
-            transition: all .38s ease-in-out;
-
-    }
-
-    section.blog article h1 {
-        font-size: 2.8em;
-        font-weight: 600;
-        line-height: 1;
-        color: #fff;
-    }
-
-    section.blog picture::before {
-        content: "";
-        position: absolute;
-        display: block;
-        width: 200%;
-        height: 529.5px;
-        background: #EB5757;
-        transform: rotate(-25deg) translateY(-300px) translateX(-100px);
-        -webkit-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
-        -moz-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
-        -ms-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
-                    transition: all .1s ease-in-out;
-
-} 
-
-    section.blog:hover article p, section.blog:hover article p {
-            margin: 20px 0;
-    }
-
-    section.blog:hover article h1, section.blog:focus article h1 {
-        font-size: 2em;
-       
-    }
-
-    section.blog:hover picture::before, section.blog:focus picture::before {
-       
-        transform: rotate(0deg) translateY(-300px) translateX(-100px);
-       
-    }
-
-    footer {
-
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-    
+section.blog article p {
+    font-size: .9em;
+    letter-spacing: 2px;
+    color: #FEBE61;
+    margin: 30px 0;
+    transition: all .38s ease-in-out;
 }
+
+section.blog article h1 {
+    font-size: 2.8em;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+}
+
+section.blog picture::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 200%;
+    height: 529.5px;
+    background: #EB5757;
+    transform: rotate(-25deg) translateY(-300px) translateX(-100px);
+    -webkit-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
+    -moz-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
+    -ms-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
+    transition: all .1s ease-in-out;
+}
+
+section.blog:hover article p,
+section.blog:hover article p {
+    margin: 20px 0;
+}
+
+section.blog:hover article h1,
+section.blog:focus article h1 {
+    font-size: 2em;
+}
+
+section.blog:hover picture::before,
+section.blog:focus picture::before {
+    transform: rotate(0deg) translateY(-300px) translateX(-100px);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 footer p:last-child {
     font-weight: 600;
     margin-bottom: 15px;
-
 }
+
 section.blog {
-    padding:0;
+    padding: 0;
 }
-@media (min-width: 600px) {
 
+@media (min-width: 600px) {
+    .hero-content .search input {
+        padding: 1em 3em;
+
+    }
+header {
+    position: absolute;
+    margin-top:10px; 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content: space-between;
+        background: #EB5757;
+        position: fixed;
+        z-index: 10000;
+}
+    header nav {
+        
+        display: block;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        overflow: hidden;
+        line-height: 1;
+        opacity: 1;
+    }
+
+    header nav ul li {
+        display: inline-block;
+        margin-right: 1.2em;
+        transition: all .3s ease-in-out;
+        padding-bottom: 5px;
+    }
+    header nav ul li:hover {
+    
+        border-bottom: 3px solid rgb(255, 255, 255);
+    }
+
+    header .button { 
+    margin:0;
+    margin-right: 10px;
+    }
+    .hero {
+        min-height: 0px;
+        height: 460px;
+    }
+    .hero-content h1 {
+        margin-top: 0;
+    }
+    .toggle {
+        display: none;
+    }
+    .hero .hero-content .search {
+        margin: 0;
+        position: absolute;
+        top: 395px;
+    }
+    header {
+        position: absolute;
+    }
     section {
         padding: 5vw 10vw;
     }
-
     section.about-us {
-
         text-align: center;
-
     }
-
-    section.about-us h2 {
-
+    .locations {
+        flex-direction: row;
+        justify-content: space-around;
     }
-
-.locations {
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-    .locations figure { 
-
+    .locations figure {
         margin-right: 20px;
     }
-
     .locations figure:last-child {
-margin-right: 0;
+        margin-right: 0;
     }
+
+
+    
+
+section.blog article {
+    position: relative;
+    overflow: hidden;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+section.blog div {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    top: 0;
+    padding: 1.5em;
+}
+
+section.blog article p {
+    font-size: .9em;
+    letter-spacing: 2px;
+    color: #FEBE61;
+    margin: 30px 0;
+    transition: all .38s ease-in-out;
+}
+
+section.blog article h1 {
+    font-size: 2.8em;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+}
+
+section.blog picture::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 200%;
+    height: 529.5px;
+    background: #EB5757;
+    transform: rotate(-25deg) translateY(-300px) translateX(-100px);
+    -webkit-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
+    -moz-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
+    -ms-transform: rotate(-25deg) translateY(-300px) translateX(-100px);
+    transition: all .1s ease-in-out;
+}
+
+section.blog:hover article p,
+section.blog:hover article p {
+    margin: 20px 0;
+}
+
+section.blog:hover article h1,
+section.blog:focus article h1 {
+    font-size: 2em;
+}
+
+section.blog:hover picture::before,
+section.blog:focus picture::before {
+    transform: rotate(0deg) translateY(-300px) translateX(-100px);
+}
 
 }
