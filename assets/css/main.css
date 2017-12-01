@@ -163,8 +163,7 @@ header {
     align-items: flex-start;
     justify-content: space-around;
     align-content: space-around;
-    background: #EB5757;
-    position: fixed;
+   
     z-index: 10000;
 }
 
@@ -695,6 +694,17 @@ section.blog:focus article h1 {
 section.blog:hover picture::before,
 section.blog:focus picture::before {
     transform: rotate(0deg) translateY(-300px) translateX(-100px);
+
 }
 
+footer {
+    display: flex;
+    
+    flex-direction: row;
+justify-content: space-around;
+
+}
+footer p:last-child {
+    margin: 0;
+}
 }
