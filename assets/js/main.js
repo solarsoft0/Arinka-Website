@@ -102,15 +102,20 @@ function smoothScroll (target) {
 
 
   
-// window.onscroll = function changeNav(){
-//   var navBar = document.getElementById('nav'),
-//         secondSection = document.getElementById('about-us'),
-//         secondSectionTop = aboutSection.getBoundingClientRect().top, 
-//         navBarHeight = navBar.getBoundingClientRect().height;
+window.onscroll = function changeNav(){
+  navBar = document.getElementById('header');
+      let  secondSection = document.getElementById('aboutus'),
+        secondSectionTop = secondSection.getBoundingClientRect().top;
 
-//   if(secondSectionTop <= navBarHeight) {
-//         navBar.className = ('basic-classname');
-//   } else if(aboutSectionTop >= navBarHeight) {
-//        navBar.className =  ('basic-classname added-classname');
-//   }
-// }
+  if(secondSectionTop <= 0) {
+    if(!navBar.classList.contains('nav-fixed'))navBar.classList.add('nav-fixed');
+        
+      }
+      
+      if(secondSectionTop > 0) {
+        if(navBar.classList.contains('nav-fixed')) navBar.classList.remove('nav-fixed');
+  }
+}
+
+
+console.log("Hi, there <3"); 

@@ -8,26 +8,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#E36E55" />
     <!-- <link rel="stylesheet" href="assets/css/reset.css" async> -->
-<link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico">
     <link rel="manifest" href="manifest.json">
 
-<!-- loading asyn using media attribute trick but without applying after using js to load css to reduce render blocking stylesheet, check https://bitsofco.de/understanding-the-critical-rendering-path/ for more info-->
-<link rel="stylesheet" href="assets/css/main.css" media="none" onload="if(media!='all')media='all'">
-<link href="https://fonts.googleapis.com/css?family=Catamaran:600,900" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
+    <!-- loading asyn using media attribute trick but without applying after using js to load css to reduce render blocking stylesheet, check https://bitsofco.de/understanding-the-critical-rendering-path/ for more info-->
+    <link rel="stylesheet" href="assets/css/main.css" media="none" onload="if(media!='all')media='all'">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,400,600,900" rel="stylesheet" media="none" onload="if(media!='all')media='all'">
 
-<noscript>
-<link rel="stylesheet" href="assets/css/main.css">
-<link href="https://fonts.googleapis.com/css?family=Catamaran:100,600,900" rel="stylesheet" async>
-</noscript>
- 
+    <noscript>
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran:100,600,900" rel="stylesheet" async>
+    </noscript>
+
 
 </head>
 
 <body>
-<!-- <link rel="stylesheet" href="assets/css/main.css" async>
+    <!-- <link rel="stylesheet" href="assets/css/main.css" async>
 <link href="https://fonts.googleapis.com/css?family=Catamaran:600,900" rel="stylesheet" async> -->
     <!-- HEADER START -->
-    <header>
+    <header id="header">
         <div class="logo">
             <img src="https://res.cloudinary.com/okanlawonema/image/upload/s--TU0droMU--/v1511619456/Logo_llcbvg.png" alt="" srcset="">
         </div>
@@ -47,14 +47,14 @@
             </ul>
         </nav>
         <a href="#" class="button sign-up">LOGIN/SIGNUP</a>
-<button class="toggle" id="toggle"> </button>
-<label for="toggle"></label>
+        <button class="toggle" id="toggle" name="toggle" aria-label="Menu Toggle"> </button>
+        
 
     </header>
     <!-- HEADER END -->
 
     <!-- HERO START -->
-    <div class="hero">
+    <div class="hero" id="hero">
         <div class="hero-content">
             <h1>Discover the best places to travel to in Nigeria</h1>
             <div class="search">
@@ -67,7 +67,7 @@
     <!-- HERO END -->
 
     <!-- ABOUT US SECTION -->
-<section class="section about-us" id="aboutus">
+    <section class="section about-us" id="aboutus">
         <h2>ABOUT ARINKA</h2>
         <p>Arinka is a fictional company, but actually a real idea someone had sometime in the past. In 1985 Aldus Corporation
             launched its first desktop publishing program Aldus PageMaker for Apple Macintosh computers, released in 1987
@@ -94,7 +94,7 @@
             </figure>
             <figure>
                 <picture>
-                    <img data-src="https://res.cloudinary.com/okanlawonema/image/upload/s--N17sntfb--/c_fill,g_auto,h_400,w_310/v1511619119/nitin-garg-327400_znasvw.jpg"
+                    <img data-src="https://res.cloudinary.com/okanlawonema/image/upload/s--Xh3eSPmV--/c_fill,g_auto,h_400,w_350/v1511619119/nitin-garg-327400_znasvw.jpg"
                         alt="Jos, Plateau">
                 </picture>
                 <figcaption>
@@ -106,7 +106,7 @@
             </figure>
             <figure>
                 <picture>
-                    <img data-src="https://res.cloudinary.com/okanlawonema/image/upload/s--SFyGc11Z--/c_fill,g_auto,h_400,w_320/v1511619145/gabriel-gurrola-125352_tjcqyg.jpg"
+                    <img data-src="https://res.cloudinary.com/okanlawonema/image/upload/s--fFfLg2f3--/c_fill,g_auto,h_400,w_350/v1511619145/gabriel-gurrola-125352_tjcqyg.jpg"
                         alt="Abuja Car Racing">
                 </picture>
                 <figcaption>
@@ -128,31 +128,38 @@
 
 
     <!-- BLOG SECTION -->
-<section class="blog" id="blog">
-        
-         <article>
-             
-         
-                <picture>
-                    <source media="(min-width: 600px)" srcset="">
-<img data-src="https://res.cloudinary.com/okanlawonema/image/upload/s--5kUxmXfn--/c_fill,g_auto,h_640,w_380/v1511619180/charlie-costello-301722_wqdd31.jpg"
-                        alt="Hanging out in Borno">
-                </picture>
-<div class="post">
-    <p class="title"> ON THE BLOG</p>
+    <section class="blog" id="blog">
 
-    <h1>Hanging out in Borno</h1>
-</div>
-         </article>
+        <article>
 
-       
+
+            <picture>
+
+                <source media="(min-width: 1200px )" srcset="https://res.cloudinary.com/okanlawonema/image/upload/s--GluUS-G5--/c_fill,g_auto,h_400,w_1200/v1511619180/charlie-costello-301722_wqdd31.jpg">
+            
+                    <source media="(min-width: 750px)" srcset="https://res.cloudinary.com/okanlawonema/image/upload/s--VjfvXDya--/c_fill,g_auto,h_400,w_750/v1511619180/charlie-costello-301722_wqdd31.jpg">
+                        <source media="(min-width: 600px)" srcset="https://res.cloudinary.com/okanlawonema/image/upload/s--7baOrSwP--/c_fill,g_auto,h_400,w_600/v1511619180/charlie-costello-301722_wqdd31.jpg">
+                            
+                    <source media="(min-width: 750px)" srcset="https://res.cloudinary.com/okanlawonema/image/upload/s--VjfvXDya--/c_fill,g_auto,h_400,w_750/v1511619180/charlie-costello-301722_wqdd31.jpg">
+                        
+                    <img data-src="https://res.cloudinary.com/okanlawonema/image/upload/s--5kUxmXfn--/c_fill,g_auto,h_640,w_380/v1511619180/charlie-costello-301722_wqdd31.jpg"
+                    alt="Hanging out in Borno">
+            </picture>
+            <div class="post">
+                <p class="title"> ON THE BLOG</p>
+
+                <h1>Hanging out in Borno</h1>   
+            </div>
+        </article>
+
+
     </section>
     <!-- BLOG SECTION END-->
 
     <!-- FOOTER SECTION -->
     <footer>
-            <p>Terms and Conditions</p>
-            <p>Copyright Frontstack, 2017</p>
+        <p>Terms and Conditions</p>
+        <p>Copyright Frontstack, 2017</p>
     </footer>
     <!-- FOOTER SECTION END    -->
     <script src="assets/js/main.js"></script>
